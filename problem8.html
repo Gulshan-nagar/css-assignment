@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .feedback-from{
+        height: 770px;
+        width: 441px;
+        border: 1px solid ;
+        display: flex;
+       margin: auto;
+       border-radius: 7px;
+       background-color:#F4F4F4;
+       font-weight: bold;
+       box-shadow: 0px 4px 10px rgba(28, 85, 160, 0.5);   }
+    h1{
+        text-align: center;
+        margin: 20px;
+    }
+    body{
+        background-color: #EA2730;
+    }
+    .common{
+        height: 35px;
+        width: 400px;
+        border-radius: 5px;
+        /* margin: 10px; */
+        margin-left: 20px;
+        border: 2px solid;
+    }
+    .feed{
+        margin-top:  20px;
+        margin-left:  20px;
+        
+    }
+   
+   fieldset{
+    margin-top:  20px;
+    height: 35px;
+        width: 379px;
+        border-radius: 5px;
+        /* margin: 10px; */
+        margin-left: 20px;
+   }
+
+
+    
+  </style>
+</head>
+<body>
+    <h1>feedback-from</h1>
+  <div class="feedback-from">
+  <form action="#" method="post">
+    <label for="feedback-type"> <div class="feed">feedback-type:</div> </label>
+    <br>
+    <select name="feedback-type" id="feedback-type"  class="common" style=" width: 408px; height: 45px;"   required >
+      <option value="">choose option</option>
+      
+      <option value="compliment">compliment</option>
+      <option value="complent">complent</option>
+      </select
+    ><br>
+    <label for="message"><div class="feed">Message:</div></label><br>
+    <textarea name="message" id="message" class="common" required></textarea>
+    <fieldset>
+    <legend >Website Rating</legend>
+    <input type="radio" id="excellent" name="rating" value="excellent" class="radio-style">
+    <label for="excellent">excellent</label>
+    <input type="radio" id="good" name="rating" value="good" class="radio-style">
+    <label for="good">good</label>
+    <input type="radio" id="average" name="rating" value="average" class="radio-style">
+    <label for="average">average</label>
+    <input type="radio" id="poor" name="rating" value="poor" class="radio-style">
+    <label for="poor">poor</label>
+    
+    </fieldset>
+    <label for="age"><div class="feed">Age</div><label for=""></label>
+    <br>
+    <input type="number" id="age" class="common" min="10" max="100" required>
+    <br>
+    <label for="email"><div class="feed">Email</div></label>
+    <br>
+    <input type="email" id="email" class="common" required>
+    <br>
+    <label for="password"><div class="feed">Password</div></label>
+    <br>
+    <input type="password" id="password" class="common" required minlength="8"><br>
+    <label for="url"><div class="feed">Website-url</div></label><br>
+    <input type="url" class="common" id="url" >
+    <br>
+    <div>
+    <input type="checkbox" class="feed" id="term" required>
+    <label for="term">I agree for the terms and condtions</label>
+  </div>
+  <button style="background-color: green ; width: 408px;" type="submit" class="common" >Submit</button>
+   
+
+    
+  </form>
+</div>
+</body>
+</html>
