@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   img {
+    margin: 20px;
+    margin-left: 60px;
+   }
+   nav {
+    display: flex;
+    justify-content: space-between;
+   }
+   .ancor {
+     margin: 12px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+   }
+   a {
+    margin-left: 20px;
+    color: black;
+    font-size: large;
+    text-decoration: none;
+   }
+   select {
+    border: none;
+    padding: 0px;
+   }
+   button {
+    margin-left: 20px;
+    background-color: #B1E50E;
+    border-radius: 7px;
+    border: none;
+    height: 35px;
+    width: 105px;
+    text-align: center;
+    text-overflow: clip;
+   }
+   .container {
+    border-radius: 20px;
+    width: 100vw;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr)); /* Create flexible columns */
+    grid-auto-rows: 75px; /* Fixed row height */
+    gap: 10px; /* Space between boxes */
+    padding: 10px;
+    background-color: #F0F0F0; /* Light background for the container */
+   }
+   .box {
+      background-color: #DCDCDD;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: small;
+      border: 5px solid hsla(240, 1%, 86%, .847);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><img src="/logo.01525825.svg" alt="logo"></div>
+    <div class="ancor">
+      <a href="#">Product</a>
+      <select value="product"></select>
+      <a href="#">Coin</a>
+      <a href="#">Ventures</a>
+      <a href="#">Blog</a>
+      <a href="#">Company</a>
+      <select value=""></select>
+      <button>Login to Pro</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <!-- Add more boxes as needed -->
+  </div>
+
+</body>
+</html>
